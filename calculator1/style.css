@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg-main{
+    height: 1000px;
+    z-index: -1;
+    /* position: absolute; */
+    width: 100%;
+    background: linear-gradient(to right, blue,black);
+}
+.box{
+    margin-left: 40%;
+    padding: 3px;
+    position: absolute;
+    margin-top: -45%;
+    background-color: rgb(27, 27, 27);
+    
+}
+.textveiw{
+    background-color:rgb(57, 57, 57);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 5;
+    width: 333px ;
+    height: 70px;
+    font-size: 25px;
+    text-align: right;
+    margin-top: -1px;
+    pointer-events: none;
+}
+
+.textveiwans{
+    background-color: rgb(57, 57, 57);
+    color:white;
+    border: none;
+    padding: 5;
+    width: 333px ;
+    outline: none;
+    height: 70px;
+    font-size: 50px;
+    margin-top: -2px;
+    text-align: right;
+    pointer-events: none;
+}
+button{
+    height: 50px;
+    color: white;
+    font-weight: lighter;
+    border:none;
+    width: 80px;
+    margin-top: 2px;
+    font-size:xx-large;
+    /* display: block; */
+}
+button:focus{
+    outline: none;
+}
+.btn-num{
+    background-color: rgba(49, 46, 46, 0.993);
+    outline: none;
+}
+.btn-C,.btn-del,.btn-op, .btn-neg{
+    background-color: rgb(73, 65, 65);
+    outline: none;
+}
+
+/* Media queries */
+
+@media (max-width:576px){
+    .box{
+        /* margin-left: 5%; */
+        padding: 3px;
+        position: absolute;
+        margin-top: -700px;
+    }
+}
+@media (max-width:768px){
+    .box{
+        margin-left: 30%;
+        padding: 3px;
+        position: absolute;
+        margin-top: -700px;
+    }
+}
+

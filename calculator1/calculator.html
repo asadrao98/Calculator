@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
+     <!-- CSS -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-main"></div>     
+        <div class="container"></div>
+            <div class="row d-flex flex-column justify-content-center align-item-center">
+                <div class="box">
+                    <form class="text" name="text">
+                        <input class="textveiw" name="textveiw"/>
+                    </form>
+                    <form class="textans" name="textans">
+                        <input class="textveiwans" name="textveiwans" placeholder="0"/>
+                    </form>
+                    <tr>
+                        <td><button class="btn-del" type="button" ><img src="backspace-24px.svg" style="filter: invert(100%);"/></button></td>
+                        <td><button class="btn-C" type="button" >C</button></td>
+                        <td><button class="btn-neg" type="button" onclick="pos_to_neg()">+/-</button></td>
+                        <td><button class="btn-op" type="button"onclick="insert('/')">/</button></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><button class="btn-num" type="button" onclick="insert(7)">7</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(8)">8</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(9)">9</button></td>
+                        <td><button class="btn-op" type="button" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><button class="btn-num" type="button" onclick="insert(4)">4</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(5)">5</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(6)">6</button></td>
+                        <td><button class="btn-op" type="button" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><button class="btn-num" type="button" onclick="insert(1)">1</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(2)">2</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(3)">3</button></td>
+                        <td><button class="btn-op" type="button" onclick="insert('+')">+</button></td>  
+                    </tr>
+                    <br>
+                    <tr>
+                        <td><button class="btn-op" type="button" onclick="insert('%')">%</button></td>
+                        <td><button class="btn-num" type="button" onclick="insert(0)">0</button></td>
+                        <td><button class="btn-op" type="button" onclick="insert('.')">.</button></td>
+                        <td><button class="btn-op" type="button" onclick="equal()">=</button></td>
+                    
+                    </tr>
+                </div>        
+            </div>
+        </div>
+
+    <!-- Javascript -->
+    <script src="calculator.js"></script>
+</body>
+</html>
