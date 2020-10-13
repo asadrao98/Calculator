@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
 }
 .bg-main{
     height: 1000px;
@@ -13,7 +14,7 @@ body{
     margin-left: 40%;
     padding: 3px;
     position: absolute;
-    margin-top: -45%;
+    margin-top: -100%;
     background-color: rgb(27, 27, 27);
     
 }
